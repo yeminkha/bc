@@ -139,6 +139,40 @@ footer a:hover {
   flex-direction: column;
   gap: 10px;
   max-width: 60%;
+  overflow: hidden;
+}
+.home .container .container-inner .left .bim {
+  animation: slideDown 0.8s ease-in-out;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.home .container .container-inner .left .title {
+  animation: slideRight 1s ease-in-out;
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(-600px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.home .container .container-inner .left .para {
+  animation: slideLeft 1s ease-in-out;
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(600px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
 .home .container .container-inner .left .title {
   font-size: 70px;
@@ -147,6 +181,15 @@ footer a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes slideUp {
+  from{
+    transform:translateY(400px);
+  }to{
+    transform: translateY(0);
+  }
 }
 .home .container .container-inner .left .button-container a {
   position: relative;
@@ -187,8 +230,15 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation : bigger 0.8s ease-in-out;
 }
-
+@keyframes bigger {
+  from{
+    scale: 0;
+  }to{
+    scale:1;
+  }
+}
 .home .container .right .container::before {
   content: "";
   position: absolute;
