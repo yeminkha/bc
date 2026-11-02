@@ -1,0 +1,98 @@
+.home {
+  position: relative;
+  width: 100%;
+  background-color: #0e0129;
+  overflow: hidden;
+  background-image: none;
+  padding: 0;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/pricing/banner-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  animation: bg-flash 0.5s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes bg-flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* .home > * {
+  position: relative;
+  z-index: 1;
+} */
+
+.home .container {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 480px;
+  gap: 20px;
+}
+.home a:hover,
+.home p {
+  color: red;
+}
+.package p,
+.package h1,
+.package h2 {
+  color: black;
+}
+.package {
+  width: 100%;
+}
+.package .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.package .cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  row-gap: 100px;
+  margin: 70px auto;
+  flex-wrap: wrap;
+}
+.package .cards-container .card {
+  background-color: #fef4f8;
+  flex-grow: 1;
+  height: max-content;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  max-width: 350px;
+  padding-top: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+.package .cards-container .card:hover {
+  transform: translateY(-10px);
+}
+.package .cards-container h1 {
+  color: #d80650;
+}
+.package .card .facts-container {
+  padding: 20px 0;
+  background-image: url("/images/pricing/5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  margin-top: 30px;
+}
+.package .card .facts-container .fact {
+  padding: 20px 10px;
+}

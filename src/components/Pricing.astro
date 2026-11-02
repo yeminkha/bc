@@ -1,0 +1,107 @@
+---
+import InnerLayout from "../layouts/InnerLayout.astro";
+import "../styles/pricing.css";
+import Contact from "../components/Contact.astro";
+---
+
+<InnerLayout>
+  <main>
+    <section class="home">
+      <div class="container">
+        <h1>Pricing</h1>
+        <div class="links">
+          <a href="/">Home</a>|
+          <p>Pricing</p>
+        </div>
+      </div>
+    </section>
+    <section class="package">
+      <div class="container">
+        <h1>Our Packages</h1>
+        <p>
+          We only charge with USD depend on the scope and the types of
+          application.
+        </p>
+        <div class="cards-container">
+          <div class="card">
+            <h2>Managed Security Monitoring Services</h2><h1>
+              Starting from USD 500*/month
+            </h1><div class="facts-container">
+              <p class="fact">
+                27/7/265 Monitoring of your Digital Estate: include
+                infrastructure, devices, end points, and cloud
+              </p>
+              <p class="fact">
+                Analysis of the incidents and potential mitigation steps
+              </p>
+              <p class="fact">
+                Cooperation with the client’s SOC/NOC and IT Teams to mitigate
+                the threats and incidents
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <h2>Managed Security Services</h2>
+            <h1>Starting from USD 1,000*/month</h1>
+            <div class="facts-container">
+              <p class="fact">Everything in the Monitoring Services</p>
+              <p class="fact">
+                Unlimited Incident Response with SLA in accordance with ITIL and
+                ISO20000 requirements
+              </p>
+              <p class="fact">Complimentary annual basic VAPT engagement</p>
+            </div>
+          </div>
+          <div class="card">
+            <h2>
+              Basic Vulnerability Assessment & Penetration Testing (VAPT)
+              service
+            </h2>
+            <h1>Starting from USD 5,000</h1>
+            <div class="facts-container">
+              <p class="fact">Inclusive of 1 round of VAPT assessment</p>
+              <p class="fact">Gaps Analysis and Recommendation</p>
+              <p class="fact">
+                Complimentary 1 round of follow up verification test
+              </p>
+              <p class="fact">
+                Up to 1x External Platform Assessment + 10 Internal IP/Nodes
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <h2>
+              Basic Mobile Application (iOS + Android) Vulnerability Assessment
+              and Penetration Testing
+            </h2>
+            <h1>Starting from USD 7,500</h1>
+            <div class="facts-container">
+              <p class="fact">Inclusive of 1 round of Mobile VAPT</p>
+              <p class="fact">Gap Analysis and Recommendation</p>
+              <p class="fact">
+                Complimentary 1 round of follow up verification test
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <h2>
+              Comprehensive In Depth Vulnerability Assessment & Penetration
+              Testing
+            </h2>
+            <h1>Starting from USD 15,000</h1>
+            <div class="facts-container">
+              <p class="fact">
+                Service including Manual Verification, Configuration Reviews,
+                Source Code Reviews and Red Teaming
+              </p>
+              <p class="fact">External/Public Platform (Per Platform)</p>
+              <p class="fact">Internal/Private Platform (Per Platform)</p>
+              <p class="fact">Mobile Application (Per Application)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <Contact></Contact>
+  </main>
+</InnerLayout>
